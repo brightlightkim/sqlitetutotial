@@ -1,0 +1,17 @@
+  CREATE TABLE IF NOT EXISTS materials (
+  	id integer PRIMARY KEY,
+  	description text NOT NULL
+  );
+
+  CREATE TABLE IF NOT EXISTS inventory (
+  	warehouse_id integer,
+  	material_id integer,
+  	qty real,
+  	PRIMARY KEY (warehouse_id, material_id),
+  	FOREIGN KEY (warehouse_id) REFERENCES warehouses (id),
+  	FOREIGN KEY (material_id) REFERENCES materials (id)
+  );
+
+##The following  ALTER TABLE statement adds the picture column to the materials table.
+  ALTER TABLE materials ADD COLUMN picture blob;
+
