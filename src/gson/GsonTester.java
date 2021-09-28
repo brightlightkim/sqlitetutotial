@@ -12,7 +12,7 @@ import com.google.gson.GsonBuilder;
 public class GsonTester {
     public static void main(String args[]) {
 
-        GsonTester tester = new GsonTester();
+        GsonTree tester = new GsonTree();
         try {
             Student student = new Student();
             student.setAge(10);
