@@ -14,6 +14,9 @@ class Student {
     @Since(1.1)
     private boolean verified;
 
+    private transient int id;
+    public static String className;
+
 
     public Student(){}
 
@@ -50,5 +53,13 @@ class Student {
 
     public boolean isVerified() {
         return verified;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
