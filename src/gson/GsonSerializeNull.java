@@ -5,7 +5,7 @@ import com.google.gson.GsonBuilder;
 
 public class GsonSerializeNull {
     public static void main(String args[]) {
-        //
+
         GsonBuilder builder = new GsonBuilder();
         builder.serializeNulls();
         builder.setPrettyPrinting();
